@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 3</title>
+    <link rel="stylesheet" href="task3.css">
+</head>
+<body>
+    
+     <fieldset>
+      
+        <input type="text" placeholder="0" id="goki">
+        <br><br>
+
+        <div class="a">
+            <button onclick="goki.value+='7'">7</button>
+            <button onclick="goki.value+='8'">8</button>
+            <button onclick="goki.value+='9'">9</button>
+            <button onclick="goki.value+='%'">%</button>
+        </div>
+
+        
+        <div class="b">
+            <button onclick="hii()">4</button>
+            <button onclick="goki.value+='5'">5</button>
+            <button onclick="goki.value+='6'">6</button>
+            <button onclick="goki.value+='*'">*</button>
+        </div>
+
+
+        
+        <div class="c">
+            <button onclick="goki.value+='1'">1</button>
+            <button onclick="goki.value+='2'">2</button>
+            <button onclick="goki.value+='3'">3</button>
+            <button  onclick="goki.value+='-'">-</button>
+        </div>
+
+
+        
+        <div class="d">
+            <button onclick="goki.value+='0'">0</button>
+            <button onclick="goki.value+='.'">.</button>
+            <button onclick="goki.value+='+'">+</button>
+            <button onclick="goki.value=eval(goki.val)">=</button>
+        </div>
+
+        <div class="d">
+            <button onclick="goki.value=''">AC</button>
+            <button onclick="goki.value=goki.value.slice(0,-1)">del</button>
+            <button onclick="goki.value+='00'">00</button>
+            <button onclick="goki.value+='/'">/</button>
+        </div>
+
+
+     </fieldset>
+
+
+     <script>
+       
+    function hii()
+{
+    var a=document.getElementById('goki').value+='4'
+}
+     </script>
+
+
+</body>
+</html>
